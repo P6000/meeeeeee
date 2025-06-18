@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Enter Max Temps for the Week"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- You can repeat this section 7 times or use dynamic fields -->
+        <EditText
+            android:id="@+id/edtMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Monday Max Temp"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Add more EditTexts for each day: edtTuesday, edtWednesday... -->
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Average"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Daily Details"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Data"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
